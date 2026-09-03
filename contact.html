@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start a Project — LPT Studio</title>
+<meta name="description" content="Tell me what you're trying to achieve, and we'll work out the right solution together. No pressure, no jargon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="portfolio.html" class="btn btn-ghost">View My Work</a>
+      <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Start a Project</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Start a project</span>
+      <h1>Tell me what you're trying to achieve.</h1>
+      <p>Not sure exactly what you need? That's fine — the form below is deliberately loose. Give me what you've got, and we'll work out the details together.</p>
+    </div>
+  </section>
+
+  <section class="section-tight" style="padding-top:0;">
+    <div class="container contact-layout">
+
+      <div class="contact-side">
+        <div class="about-point reveal">
+          <div class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div><h4>What happens next</h4><p>I'll read through what you've sent and reply — usually within a couple of days — with initial thoughts and any questions.</p></div>
+        </div>
+        <div class="about-point reveal">
+          <div class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><h4>No pressure, no pitch</h4><p>This is a conversation, not a sales call. If it's not a good fit, I'll tell you honestly.</p></div>
+        </div>
+        <div class="about-point reveal">
+          <div class="about-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+          <div><h4>Prefer email?</h4><p>You can reach me directly at <a href="mailto:liam@lpt-studio.co.uk" style="text-decoration:underline;">liam@lpt-studio.co.uk</a>.</p></div>
+        </div>
+
+        <div class="reassurance-box reveal">
+          <p>Not sure exactly what you need? That's fine. Tell me what you're trying to achieve and we can work it out together.</p>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="project-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="company">Business / company <span class="optional">(optional)</span></label>
+              <input type="text" id="company" name="company" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label>What are you looking for?</label>
+            <div class="project-type-grid">
+              <label class="type-option">
+                <input type="radio" name="projectType" value="Website" required>
+                <span>Website</span>
+              </label>
+              <label class="type-option">
+                <input type="radio" name="projectType" value="App">
+                <span>App</span>
+              </label>
+              <label class="type-option">
+                <input type="radio" name="projectType" value="Web app">
+                <span>Web app</span>
+              </label>
+              <label class="type-option">
+                <input type="radio" name="projectType" value="Something else">
+                <span>Something else</span>
+              </label>
+              <label class="type-option">
+                <input type="radio" name="projectType" value="Not sure yet">
+                <span>Not sure yet</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Brief description of the project</label>
+            <textarea id="details" name="details" required placeholder="What are you trying to achieve? Include anything you think is useful — there's no wrong way to describe it."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="budget">Approximate budget <span class="optional">(optional)</span></label>
+              <input type="text" id="budget" name="budget" placeholder="e.g. £500–£1,500">
+            </div>
+            <div class="field">
+              <label for="timeframe">Desired timeframe <span class="optional">(optional)</span></label>
+              <input type="text" id="timeframe" name="timeframe" placeholder="e.g. within 2 months">
+            </div>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-accent">Send project details</button>
+            <span class="form-note">I'll reply within a couple of days.</span>
+          </div>
+
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+        <p>Modern websites and digital tools, without the agency price tag. Based in the UK, working with clients everywhere.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="mailto:liam@lpt-studio.co.uk">liam@lpt-studio.co.uk</a></li>
+            <li><a href="contact.html">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LPT Studio. All rights reserved.</span>
+      <span>Designed &amp; built by Liam — this site is a portfolio piece too.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=2"></script>
+<script type="module" src="js/page-contact.js?v=2"></script>
+</body>
+</html>

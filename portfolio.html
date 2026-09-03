@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — LPT Studio</title>
+<meta name="description" content="Real websites, apps and business tools designed and built by Liam at LPT Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="portfolio.html" class="btn btn-ghost">View My Work</a>
+      <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Start a Project</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">My work</span>
+      <h1>Real projects, designed and built end to end.</h1>
+      <p>A mix of personal products and client work. Each one below is something I've genuinely designed, built and shipped — not a mockup.</p>
+    </div>
+  </section>
+
+  <section class="section-tight" style="padding-top:0;">
+    <div class="container">
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="all">All work</button>
+        <button class="filter-chip" data-filter="app">Apps</button>
+        <button class="filter-chip" data-filter="tool">Tools &amp; extensions</button>
+        <button class="filter-chip" data-filter="website">Websites</button>
+      </div>
+
+      <div data-category="app" class="work-row reveal">
+        <div class="work-visual" data-icon="flexle">
+          <svg viewBox="0 0 220 220" width="70%" fill="none">
+            <rect x="10" y="10" width="200" height="200" rx="28" fill="#E4F0EA"/>
+            <g stroke="#0A5443" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="45" y="45" width="130" height="130" rx="14" fill="none"/>
+              <path d="M65 90h90M65 110h90M65 130h60"/>
+              <circle cx="150" cy="150" r="14" fill="#0E6B54" stroke="none"/>
+            </g>
+          </svg>
+        </div>
+        <div class="work-copy">
+          <span class="work-tag">iOS App</span>
+          <h3>Flexle</h3>
+          <p>A daily word puzzle game with a custom word-validation engine, hint economy, and a full social layer — friends, groups, and league tables.</p>
+          <div class="work-meta"><span>Swift · SwiftUI</span><span>Supabase</span><span>App Store</span></div>
+          <a href="portfolio/flexle.html" class="work-link">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div data-category="tool" class="work-row reverse reveal">
+        <div class="work-visual" data-icon="full-window">
+          <svg viewBox="0 0 220 220" width="70%" fill="none">
+            <rect x="10" y="10" width="200" height="200" rx="28" fill="#EFEEE8"/>
+            <g stroke="#15181C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="40" y="60" width="140" height="100" rx="10" fill="none"/>
+              <path d="M40 82h140"/>
+              <circle cx="55" cy="71" r="3"/>
+              <circle cx="66" cy="71" r="3"/>
+              <path d="M65 120l20 20 40-45" stroke="#0E6B54"/>
+            </g>
+          </svg>
+        </div>
+        <div class="work-copy">
+          <span class="work-tag">Safari Extension</span>
+          <h3>Full Window</h3>
+          <p>A macOS Safari extension that expands any video into a distraction-free window, with gesture controls and quality switching.</p>
+          <div class="work-meta"><span>Swift · WebExtension</span><span>StoreKit 2</span><span>App Store</span></div>
+          <a href="portfolio/full-window.html" class="work-link">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div data-category="app" class="work-row reveal">
+        <div class="work-visual" data-icon="credits">
+          <svg viewBox="0 0 220 220" width="70%" fill="none">
+            <rect x="10" y="10" width="200" height="200" rx="28" fill="#E4F0EA"/>
+            <g stroke="#0A5443" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="55" y="35" width="110" height="150" rx="16" fill="none"/>
+              <path d="M80 65h60M80 85h40"/>
+              <circle cx="90" cy="130" r="18" fill="#0E6B54" stroke="none"/>
+              <path d="M120 122h30M120 138h20"/>
+            </g>
+          </svg>
+        </div>
+        <div class="work-copy">
+          <span class="work-tag">iOS App · In progress</span>
+          <h3>Credits</h3>
+          <p>A personal film and TV journal with season-by-season tracking, a home screen widget, and Siri shortcuts.</p>
+          <div class="work-meta"><span>SwiftUI · SwiftData</span><span>CloudKit</span><span>In development</span></div>
+          <a href="portfolio/credits.html" class="work-link">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div data-category="website" class="work-row reverse reveal">
+        <div class="work-visual">
+          <svg viewBox="0 0 220 220" width="70%" fill="none">
+            <rect x="10" y="10" width="200" height="200" rx="28" fill="#E4F0EA"/>
+            <g stroke="#0A5443" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="35" y="45" width="150" height="20" rx="4"/>
+              <rect x="35" y="80" width="70" height="95" rx="6"/>
+              <rect x="115" y="80" width="70" height="45" rx="6"/>
+              <rect x="115" y="132" width="70" height="43" rx="6"/>
+            </g>
+          </svg>
+        </div>
+        <div class="work-copy">
+          <span class="work-tag">Website</span>
+          <h3>This site</h3>
+          <p>The LPT Studio site itself — designed and built as both a working business site and a demonstration of what a client project looks like.</p>
+          <div class="work-meta"><span>HTML · CSS · JS</span><span>No framework</span><span>Live</span></div>
+          <span class="work-link" style="border-bottom:none; cursor:default;">You're looking at it</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Want something like this built for you?</h2>
+          <p>Tell me about your project and I'll tell you honestly what it'll take.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+        <p>Modern websites and digital tools, without the agency price tag. Based in the UK, working with clients everywhere.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="mailto:liam@lpt-studio.co.uk">liam@lpt-studio.co.uk</a></li>
+            <li><a href="contact.html">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LPT Studio. All rights reserved.</span>
+      <span>Designed &amp; built by Liam — this site is a portfolio piece too.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=2"></script>
+</body>
+</html>

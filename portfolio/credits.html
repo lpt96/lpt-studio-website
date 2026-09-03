@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credits — Case Study — LPT Studio</title>
+<meta name="description" content="How Credits, a personal film and TV journal app for iOS, is being designed and built.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../portfolio.html" class="active">Work</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../portfolio.html" class="btn btn-ghost">View My Work</a>
+      <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container">
+    <a href="../index.html">Home</a>
+    <a href="../services.html">Services</a>
+    <a href="../portfolio.html">Work</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="container">
+      <a href="../portfolio.html" class="service-link" style="margin-bottom:24px; display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px; transform:rotate(180deg);"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to all work</a>
+      <span class="eyebrow">iOS App · In progress</span>
+      <h1 style="font-size:clamp(2.1rem,4vw,3rem); margin-top:16px;">Credits — a personal, beautifully-made film and TV journal.</h1>
+      <p style="color:var(--ink-soft); font-size:1.08rem; max-width:60ch; margin-top:16px;">A journal for everything you've watched — with season-by-season TV tracking, a home screen widget, and Siri shortcuts, wrapped in a custom "Glassy Gold" theme.</p>
+
+      <div class="case-meta-row">
+        <div class="case-meta-item"><h5>Role</h5><p>Design &amp; development</p></div>
+        <div class="case-meta-item"><h5>Platform</h5><p>iOS</p></div>
+        <div class="case-meta-item"><h5>Stack</h5><p>SwiftUI, SwiftData, CloudKit</p></div>
+        <div class="case-meta-item"><h5>Status</h5><div class="status-pill">In development</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="case-visual-hero">
+      <svg viewBox="0 0 400 260" width="60%" fill="none">
+        <rect x="10" y="10" width="380" height="240" rx="24" fill="#E4F0EA"/>
+        <g stroke="#0A5443" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="60" y="40" width="90" height="130" rx="8" fill="#0E6B54" stroke="none"/>
+          <rect x="165" y="40" width="90" height="130" rx="8"/>
+          <rect x="270" y="40" width="70" height="130" rx="8"/>
+          <path d="M60 195h280M60 210h180" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <section class="section-tight" style="padding-top:0;">
+    <div class="container case-body">
+      <nav class="case-toc" aria-label="Case study sections">
+        <a href="#idea" class="active">The idea</a>
+        <a href="#role">My role</a>
+        <a href="#design">Design &amp; build</a>
+        <a href="#tech">Technology</a>
+        <a href="#outcome">Outcome</a>
+      </nav>
+
+      <div>
+        <div id="idea" class="case-section reveal">
+          <h3>The problem / idea</h3>
+          <p>Most "watch tracking" apps feel like spreadsheets with icons. Credits started from a different question: what would a film and TV journal feel like if it were designed with the same care as the films it's cataloguing?</p>
+        </div>
+
+        <div id="role" class="case-section reveal">
+          <h3>My role</h3>
+          <p>Solo design and development — visual design, data model, and the full SwiftUI build.</p>
+        </div>
+
+        <div id="design" class="case-section reveal">
+          <h3>Design &amp; development work</h3>
+          <p>Recent work spans the visual system and several platform integrations:</p>
+          <ul>
+            <li>A custom "Glassy Gold" theme applied consistently across every screen</li>
+            <li>A hybrid timeline view — a horizontal map strip paired with a vertical card list</li>
+            <li>A home screen widget sharing data via an App Group snapshot</li>
+            <li>Siri integration through App Intents</li>
+            <li>Season-by-season TV tracking and franchise/collection browsing</li>
+          </ul>
+        </div>
+
+        <div id="tech" class="case-section reveal">
+          <h3>Technology</h3>
+          <div class="tech-tags">
+            <span>SwiftUI</span><span>SwiftData</span><span>CloudKit</span><span>WidgetKit</span><span>App Intents</span>
+          </div>
+        </div>
+
+        <div id="outcome" class="case-section reveal">
+          <h3>Outcome &amp; current status</h3>
+          <p>Still in active development. A "Director's Cut" premium tier is designed and feature-flagged, pending licensing arrangements — a deliberate decision to hold back monetisation until the core experience has real usage behind it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Building something in a similar space?</h2>
+          <p>Whether it's a game, an app, or a tool for your business — let's talk it through.</p>
+        </div>
+        <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+        <p>Modern websites and digital tools, without the agency price tag. Based in the UK, working with clients everywhere.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../portfolio.html">Work</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="mailto:liam@lpt-studio.co.uk">liam@lpt-studio.co.uk</a></li>
+            <li><a href="../contact.html">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LPT Studio. All rights reserved.</span>
+      <span>Designed &amp; built by Liam — this site is a portfolio piece too.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js?v=2"></script>
+</body>
+</html>

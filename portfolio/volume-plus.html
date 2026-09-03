@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volume+ — Case Study — LPT Studio</title>
+<meta name="description" content="How Volume+, a per-app macOS menu bar volume utility, was designed and built using the Core Audio Process Tap API.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../portfolio.html" class="active">Work</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../portfolio.html" class="btn btn-ghost">View My Work</a>
+      <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container">
+    <a href="../index.html">Home</a>
+    <a href="../services.html">Services</a>
+    <a href="../portfolio.html">Work</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+  </div>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="container">
+      <a href="../portfolio.html" class="service-link" style="margin-bottom:24px; display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px; transform:rotate(180deg);"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to all work</a>
+      <span class="eyebrow">macOS App</span>
+      <h1 style="font-size:clamp(2.1rem,4vw,3rem); margin-top:16px;">Volume+ — real per-app volume control for macOS.</h1>
+      <p style="color:var(--ink-soft); font-size:1.08rem; max-width:60ch; margin-top:16px;">A menu bar utility that gives every app its own volume slider — including a 200% boost — built directly on Apple's low-level Core Audio Process Tap API.</p>
+
+      <div class="case-meta-row">
+        <div class="case-meta-item"><h5>Role</h5><p>Design &amp; development</p></div>
+        <div class="case-meta-item"><h5>Platform</h5><p>macOS 14.4+</p></div>
+        <div class="case-meta-item"><h5>Stack</h5><p>Swift, AppKit, Core Audio</p></div>
+        <div class="case-meta-item"><h5>Status</h5><div class="status-pill">Live · direct download</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="case-visual-hero">
+      <svg viewBox="0 0 400 260" width="60%" fill="none">
+        <rect x="10" y="10" width="380" height="240" rx="24" fill="#EFEEE8"/>
+        <g stroke="#15181C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="70" y="150" width="30" height="60" rx="4" fill="#0E6B54" stroke="none"/>
+          <rect x="120" y="100" width="30" height="110" rx="4"/>
+          <rect x="170" y="130" width="30" height="80" rx="4" fill="#0E6B54" stroke="none"/>
+          <rect x="220" y="70" width="30" height="140" rx="4"/>
+          <rect x="270" y="115" width="30" height="95" rx="4" fill="#0E6B54" stroke="none"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <section class="section-tight" style="padding-top:0;">
+    <div class="container case-body">
+      <nav class="case-toc" aria-label="Case study sections">
+        <a href="#idea" class="active">The idea</a>
+        <a href="#role">My role</a>
+        <a href="#design">Design &amp; build</a>
+        <a href="#tech">Technology</a>
+        <a href="#outcome">Outcome</a>
+      </nav>
+
+      <div>
+        <div id="idea" class="case-section reveal">
+          <h3>The problem / idea</h3>
+          <p>macOS only offers one system-wide volume control, so there's no easy way to turn down one noisy app while keeping music or a call at full volume. Volume+ fixes that with real per-app control, not a workaround.</p>
+        </div>
+
+        <div id="role" class="case-section reveal">
+          <h3>My role</h3>
+          <p>Solo design and development, including researching and implementing Apple's newer Core Audio Process Tap API from the ground up.</p>
+        </div>
+
+        <div id="design" class="case-section reveal">
+          <h3>Design &amp; development work</h3>
+          <p>Built as a plain AppKit app rather than a SwiftUI lifecycle app, for full control over a lightweight menu bar presence. Features include:</p>
+          <ul>
+            <li>Per-app sliders with up to 200% volume boost</li>
+            <li>A live equalizer visualization</li>
+            <li>Software master volume for devices with fixed hardware output</li>
+            <li>Keyboard volume key interception and Bluetooth device auto-switching</li>
+            <li>Launch-at-login and app icon theming</li>
+          </ul>
+        </div>
+
+        <div id="tech" class="case-section reveal">
+          <h3>Technology</h3>
+          <div class="tech-tags">
+            <span>Swift</span><span>AppKit</span><span>Core Audio Process Tap</span><span>StoreKit 2</span>
+          </div>
+        </div>
+
+        <div id="outcome" class="case-section reveal">
+          <h3>Outcome &amp; current status</h3>
+          <p>Notarized and distributed as a Developer ID-signed direct download — the Process Tap API isn't compatible with Mac App Store sandboxing, so this ships outside the App Store by design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Building something in a similar space?</h2>
+          <p>Whether it's a game, an app, or a tool for your business — let's talk it through.</p>
+        </div>
+        <a href="../contact.html" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">L</span>LPT Studio</a>
+        <p>Modern websites and digital tools, without the agency price tag. Based in the UK, working with clients everywhere.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <ul>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../portfolio.html">Work</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="mailto:liam@lpt-studio.co.uk">liam@lpt-studio.co.uk</a></li>
+            <li><a href="../contact.html">Start a Project</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LPT Studio. All rights reserved.</span>
+      <span>Designed &amp; built by Liam — this site is a portfolio piece too.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js?v=2"></script>
+</body>
+</html>
