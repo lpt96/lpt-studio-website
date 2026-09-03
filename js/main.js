@@ -122,7 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
     el.innerHTML = '';
     const img = document.createElement('img');
     img.src = found;
-    img.alt = '';
+    const readableName = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    img.alt = `${readableName} app icon`;
     img.className = 'visual-icon-img';
     el.appendChild(img);
   });
