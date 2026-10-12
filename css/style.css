@@ -1077,3 +1077,152 @@ section { padding: 92px 0; }
   align-items: flex-start;
   justify-content: center;
 }
+
+/* ---------- Downloads ---------- */
+
+.download-list { display: flex; flex-direction: column; gap: 22px; }
+
+.download-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.download-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.download-card h3 { font-size: 1.5rem; margin-bottom: 8px; }
+.download-card h3 a:hover { color: var(--accent-strong); }
+.download-card p { color: var(--ink-soft); max-width: 60ch; }
+.download-card .work-tag { margin-bottom: 12px; }
+.download-actions { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+
+.download-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22%;
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
+.download-meta {
+  display: flex;
+  gap: 8px 18px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+
+.download-note {
+  margin-top: 36px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  max-width: 70ch;
+}
+.download-note svg { width: 20px; height: 20px; flex: none; color: var(--accent); margin-top: 2px; }
+
+@media (max-width: 760px) {
+  .download-card { grid-template-columns: 1fr; gap: 18px; padding: 24px; }
+  .download-icon { width: 76px; height: 76px; }
+  .download-actions { flex-direction: row; flex-wrap: wrap; }
+}
+
+/* App download page */
+
+.app-hero { padding: 56px 0 92px; }
+.app-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+.app-hero-title { display: flex; align-items: center; gap: 20px; margin: 22px 0 18px; }
+.app-hero-title .download-icon { width: 84px; height: 84px; }
+.app-hero h1 { font-size: clamp(2.4rem, 4.6vw, 3.6rem); }
+.app-hero-sub { font-size: 1.15rem; color: var(--ink-soft); max-width: 48ch; margin-bottom: 30px; }
+.app-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.btn svg { width: 18px; height: 18px; }
+
+.app-shot {
+  justify-self: center;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  background: #18181A;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.feature {
+  padding: 26px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feature h4 { font-size: 1.05rem; }
+.feature p { color: var(--ink-soft); font-size: 0.93rem; }
+
+.privacy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 40px;
+  margin-top: 8px;
+}
+.privacy-grid .about-point p { max-width: 46ch; }
+
+.release-box {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 28px 32px;
+}
+.release-box h4 { font-size: 1.1rem; margin-bottom: 4px; }
+.release-box .release-date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-faint); }
+.release-box ul { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.release-box ul li { color: var(--ink-soft); font-size: 0.95rem; display: flex; gap: 10px; }
+.release-box ul li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin-top: 9px; flex: none; }
+.checksum {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  overflow-wrap: anywhere;
+}
+
+.faq { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+.faq details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 18px 22px;
+}
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq details p { color: var(--ink-soft); margin-top: 12px; font-size: 0.95rem; }
+
+@media (max-width: 900px) {
+  .app-hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .privacy-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .release-box { padding: 22px; }
+}
