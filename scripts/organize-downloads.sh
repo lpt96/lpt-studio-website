@@ -71,7 +71,9 @@ destination_for() {
 
     "flexle.html") echo "portfolio/flexle.html" ;;
     "full-window.html") echo "portfolio/full-window.html" ;;
-    "credits.html") echo "portfolio/credits.html" ;;
+    "squish.html") echo "portfolio/squish.html" ;;
+    "myiptv.html") echo "portfolio/myiptv.html" ;;
+    "euvalis.html") echo "portfolio/euvalis.html" ;;
     "volume-plus.html") echo "portfolio/volume-plus.html" ;;
 
     *) echo "" ;;
@@ -82,7 +84,7 @@ destination_for() {
 # these extensions, and routed to assets/icons/ automatically.
 is_icon_slug() {
   case "$1" in
-    flexle|full-window|credits|volume-plus) return 0 ;;
+    flexle|full-window|squish|myiptv|euvalis|volume-plus) return 0 ;;
     *) return 1 ;;
   esac
 }

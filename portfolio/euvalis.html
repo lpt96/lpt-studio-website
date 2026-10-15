@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Credits — Case Study — LPT Studio</title>
-<meta name="description" content="How Credits, a personal film and TV journal app for iOS, is being designed and built.">
+<title>Euvalis — Case Study — LPT Studio</title>
+<meta name="description" content="An AI-powered nutrition and meal-planning app: log meals by photo, text or voice, plan the week and build shopping lists.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -46,30 +46,22 @@
   <section class="case-hero">
     <div class="container">
       <a href="../portfolio.html" class="service-link" style="margin-bottom:24px; display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px; transform:rotate(180deg);"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Back to all work</a>
-      <span class="eyebrow">iOS App · In progress</span>
-      <h1 style="font-size:clamp(2.1rem,4vw,3rem); margin-top:16px;">Credits — a personal, beautifully-made film and TV journal.</h1>
-      <p style="color:var(--ink-soft); font-size:1.08rem; max-width:60ch; margin-top:16px;">A journal for everything you've watched — with season-by-season TV tracking, a home screen widget, and Siri shortcuts, wrapped in a custom "Glassy Gold" theme.</p>
+      <span class="eyebrow">iOS App · Live</span>
+      <h1 style="font-size:clamp(2.1rem,4vw,3rem); margin-top:16px;">Euvalis — nutrition tracking that respects your privacy.</h1>
+      <p style="color:var(--ink-soft); font-size:1.08rem; max-width:60ch; margin-top:16px;">An iOS nutrition and meal-planning app. Log food with a photo, text or your voice, plan your week, and keep your data on your device.</p>
 
       <div class="case-meta-row">
         <div class="case-meta-item"><h5>Role</h5><p>Design &amp; development</p></div>
         <div class="case-meta-item"><h5>Platform</h5><p>iOS</p></div>
-        <div class="case-meta-item"><h5>Stack</h5><p>SwiftUI, SwiftData, CloudKit</p></div>
-        <div class="case-meta-item"><h5>Status</h5><div class="status-pill">In development</div></div>
+        <div class="case-meta-item"><h5>Stack</h5><p>SwiftUI, Supabase, OpenAI</p></div>
+        <div class="case-meta-item"><h5>Status</h5><div class="status-pill">On the App Store</div></div>
       </div>
     </div>
   </section>
 
   <div class="container">
     <div class="case-visual-hero">
-      <svg viewBox="0 0 400 260" width="60%" fill="none">
-        <rect x="10" y="10" width="380" height="240" rx="24" fill="#E4F0EA"/>
-        <g stroke="#0A5443" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="60" y="40" width="90" height="130" rx="8" fill="#0E6B54" stroke="none"/>
-          <rect x="165" y="40" width="90" height="130" rx="8"/>
-          <rect x="270" y="40" width="70" height="130" rx="8"/>
-          <path d="M60 195h280M60 210h180" stroke-width="2"/>
-        </g>
-      </svg>
+      <svg viewBox="0 0 220 220" width="30%" fill="none"><rect x="10" y="10" width="200" height="200" rx="28" fill="#E4F0EA"/><g stroke="#0A5443" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="110" cy="110" r="52"/><path d="M110 58a52 52 0 0 1 45 78" stroke="#0E6B54" stroke-width="5"/><path d="M90 110l14 14 28-30"/></g></svg>
     </div>
   </div>
 
@@ -86,36 +78,38 @@
       <div>
         <div id="idea" class="case-section reveal">
           <h3>The problem / idea</h3>
-          <p>Most "watch tracking" apps feel like spreadsheets with icons. Credits started from a different question: what would a film and TV journal feel like if it were designed with the same care as the films it's cataloguing?</p>
+          <p>Calorie trackers are either tedious or data-hungry. Euvalis makes logging quick with AI, while treating privacy as a core feature: meal photos are deleted straight after processing.</p>
         </div>
 
         <div id="role" class="case-section reveal">
           <h3>My role</h3>
-          <p>Solo design and development — visual design, data model, and the full SwiftUI build.</p>
+          <p>Solo design and development, from concept through to App Store release.</p>
         </div>
 
         <div id="design" class="case-section reveal">
           <h3>Design &amp; development work</h3>
-          <p>Recent work spans the visual system and several platform integrations:</p>
+          <p>What went into it:</p>
           <ul>
-            <li>A custom "Glassy Gold" theme applied consistently across every screen</li>
-            <li>A hybrid timeline view — a horizontal map strip paired with a vertical card list</li>
-            <li>A home screen widget sharing data via an App Group snapshot</li>
-            <li>Siri integration through App Intents</li>
-            <li>Season-by-season TV tracking and franchise/collection browsing</li>
+            <li>AI meal logging from photo, text or voice</li>
+            <li>Weekly meal planning, ratings and favourites</li>
+            <li>Shopping lists generated from your plan</li>
+            <li>Apple Health integration and workout tracking</li>
+            <li>Barcode scanning</li>
+            <li>Taste data and preferences stay on-device</li>
+            <li>Server-side AI proxy with usage limits, so no keys live in the app</li>
           </ul>
         </div>
 
         <div id="tech" class="case-section reveal">
           <h3>Technology</h3>
           <div class="tech-tags">
-            <span>SwiftUI</span><span>SwiftData</span><span>CloudKit</span><span>WidgetKit</span><span>App Intents</span>
+            <span>SwiftUI</span><span>Supabase</span><span>Edge Functions</span><span>StoreKit 2</span><span>HealthKit</span>
           </div>
         </div>
 
         <div id="outcome" class="case-section reveal">
           <h3>Outcome &amp; current status</h3>
-          <p>Still in active development. A "Director's Cut" premium tier is designed and feature-flagged, pending licensing arrangements — a deliberate decision to hold back monetisation until the core experience has real usage behind it.</p>
+          <p>Live on the App Store with a free trial and a simple monthly or yearly subscription.</p>
         </div>
       </div>
     </div>
