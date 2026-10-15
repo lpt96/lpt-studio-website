@@ -11,7 +11,7 @@ portfolio.html        Work (listing + filter)
 portfolio/
   flexle.html          Case study
   full-window.html      Case study
-  credits.html          Case study
+  squish.html / myiptv.html / euvalis.html   Case studies
   volume-plus.html       Case study
 about.html            About
 contact.html          Start a Project (enquiry form)
