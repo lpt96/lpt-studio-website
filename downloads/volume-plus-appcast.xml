@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparkle update feed for Volume+. Newest release first.
+     To publish an update: add a new <item> at the top with the version,
+     the .dmg URL, and the edSignature/length printed by Scripts/make-dmg.sh. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Volume+</title>
+    <link>https://lpt-studio.co.uk/downloads/volume-plus-appcast.xml</link>
+    <description>Volume+ updates</description>
+    <language>en</language>
+    <item>
+      <title>Volume+ 2.0</title>
+      <pubDate>Wed, 21 Oct 2026 22:30:00 +0100</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.4</sparkle:minimumSystemVersion>
+      <link>https://lpt-studio.co.uk/downloads/volume-plus.html</link>
+      <description><![CDATA[
+        <h2>Volume+ 2.0</h2>
+        <ul>
+          <li>Per-app output devices</li>
+          <li>Bass, treble and voice controls for each app</li>
+          <li>Presets and keyboard shortcuts</li>
+          <li>Optional auto-lowering of other apps during calls</li>
+          <li>Pinned apps drawer and drag to reorder</li>
+          <li>Liquid Glass design on macOS Tahoe</li>
+          <li>Lots of fixes</li>
+        </ul>
+      ]]></description>
+      <enclosure
+        url="https://lpt-studio.co.uk/downloads/files/VolumePlus-2.0.dmg"
+        sparkle:edSignature="9U0WSrvJdENjB6ABVsU7s5W/Dk3Qq7jzJ+Mh3uGLob9ERDbHzhgD3hcKmPExCnLKiKLVUafKOdoY7zhIKDdkAg=="
+        length="7621642"
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>
