@@ -1156,9 +1156,8 @@ section { padding: 92px 0; }
   justify-self: center;
   width: 100%;
   max-width: 380px;
-  border-radius: 16px;
-  box-shadow: var(--shadow-lg);
-  background: #18181A;
+  /* Transparent screenshot of the menu bar panel — shadow follows its shape. */
+  filter: drop-shadow(0 24px 40px rgba(21, 24, 28, 0.22));
 }
 
 .feature-grid {
